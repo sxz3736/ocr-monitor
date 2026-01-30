@@ -26,7 +26,7 @@
 ## 📁 项目结构
 
 ```text
-test/
+ocr-monitor/
 ├── main.py                     # 程序入口
 ├── ui/                         # UI 层
 │   ├── widgets/                # 纯控件定义
@@ -73,8 +73,8 @@ test/
 ### 1️⃣ 创建虚拟环境（推荐）
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+conda create -n ocr-monitor python=3.10
+conda activate ocr-monitor
 ```
 
 ### 2️⃣ 安装依赖
@@ -96,7 +96,7 @@ pip install -r requirements.txt
 ### 推荐启动方式（包模式）
 
 ```bash
-cd test
+cd ocr-monitor
 python  main.py
 ```
 
@@ -164,7 +164,7 @@ python  main.py
 
 ---
 
-## 🙌 致谢
+## 致谢
 
 * [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 * PyQt5
